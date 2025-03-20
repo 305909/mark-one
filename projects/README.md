@@ -2,9 +2,8 @@
 
 ## Introduzione
 
-La presente guida è dedicata all'uso avanzato di OpenOffice Calc per l’analisi statistica dei dati. Gli studenti di quarta superiore, impegnati in un corso che punta ad un'eccellenza scientifica, troveranno in questa guida una risorsa preziosa per acquisire competenze avanzate nell’utilizzo delle funzioni statistiche offerte dal software. Il nostro obiettivo è fornire strumenti operativi dettagliati, esempi concreti e una solida comprensione teorica dei concetti, per favorire un approccio scientifico rigoroso nell'analisi dei dati.
-
-L'analisi dei dati si suddivide in tre grandi aree: **analisi descrittiva**, **analisi comparativa** e **analisi inferenziale**. Ogni sezione sarà accompagnata da esempi pratici che illustreranno l’uso delle funzioni più comuni in OpenOffice Calc, consentendo di elaborare e interpretare i dati con precisione e competenza.
+OpenOffice Calc è un software di foglio di calcolo, parte della suite OpenOffice, che permette di organizzare, manipolare e analizzare dati in modo semplice ed efficace. Simile a Microsoft Excel, Calc offre una vasta gamma di strumenti per lavorare con numeri, testo e grafici, rendendolo ideale per l'analisi e la gestione di grandi quantità di informazioni.
+L'analisi dei dati è il processo attraverso cui si esaminano e interpretano i dati per ottenere informazioni utili e prendere decisioni informate. Può riguardare vari aspetti, come descrivere le caratteristiche principali di un dataset (analisi descrittiva), confrontare gruppi di dati per individuare differenze significative (analisi comparativa), o fare previsioni e inferenze sulla base di un campione di dati (analisi inferenziale). L'analisi dei dati è essenziale in numerosi ambiti, dalle scienze sociali alla finanza, per aiutare a comprendere fenomeni, identificare tendenze e fare previsioni accurate.
 
 ## 1. Analisi Descrittiva dei Dati
 
