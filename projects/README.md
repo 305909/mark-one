@@ -42,12 +42,11 @@ Il risultato sarà **85**, che rappresenta il voto medio degli studenti.
 La **mediana** è il valore centrale di un dataset ordinato. Se il numero di osservazioni è dispari, la mediana è il valore centrale; se è pari, è la media dei due valori centrali. La formula della mediana è:
 
 $$
-\text{Mediana} = \left\{
-\begin{array}{ll}
+\text{Mediana} = 
+\begin{cases} 
 x_{\left(\frac{n+1}{2}\right)} & \text{se } n \text{ è dispari} \\
 \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} & \text{se } n \text{ è pari}
-\end{array}
-\right.
+\end{cases}
 $$
 
 In OpenOffice Calc, la funzione per calcolare la mediana è `=MEDIANA(range)`.
