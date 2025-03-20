@@ -17,9 +17,9 @@ Le misure di tendenza centrale descrivono il "centro" di un dataset e sono fonda
 #### 1.1.1 Media Aritmetica
 La **media aritmetica** è la somma di tutti i valori divisa per il numero totale dei valori. La formula generale è:
 
-\[
+$$
 \text{Media} = \frac{\sum_{i=1}^{n} x_i}{n}
-\]
+$$
 
 In OpenOffice Calc, la funzione per calcolare la media è `=MEDIA(range)`.
 
@@ -41,14 +41,14 @@ Il risultato sarà **85**, che rappresenta il voto medio degli studenti.
 #### 1.1.2 Mediana
 La **mediana** è il valore centrale di un dataset ordinato. Se il numero di osservazioni è dispari, la mediana è il valore centrale; se è pari, è la media dei due valori centrali. La formula della mediana è:
 
-\[
+$$
 \text{Mediana} = \left\{
 \begin{array}{ll}
 x_{\left(\frac{n+1}{2}\right)} & \text{se } n \text{ è dispari} \\
 \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} & \text{se } n \text{ è pari}
 \end{array}
 \right.
-\]
+$$
 
 In OpenOffice Calc, la funzione per calcolare la mediana è `=MEDIANA(range)`.
 
@@ -64,9 +64,9 @@ Nel nostro caso, la mediana sarà **85**, poiché è il valore centrale dei dati
 #### 1.1.3 Moda
 La **moda** è il valore che appare più frequentemente in un dataset. Se esistono più valori con la stessa frequenza massima, il dataset è multimodale. La formula per la moda è:
 
-\[
+$$
 \text{Moda} = x_i \quad \text{con la massima frequenza}
-\]
+$$
 
 In OpenOffice Calc, la funzione di OpenOffice per calcolare la moda è `=MODA(range)`.
 
@@ -86,9 +86,9 @@ Le misure di dispersione descrivono quanto i dati siano distribuiti attorno alla
 #### 1.2.1 Varianza
 La **varianza** misura la media delle deviazioni quadratiche dalla media. La formula per la varianza è:
 
-\[
+$$
 \text{Varianza} = \frac{\sum_{i=1}^{n} (x_i - \mu)^2}{n}
-\]
+$$
 
 In OpenOffice Calc, la funzione per calcolare la varianza è `=VAR.P(range)` per una popolazione intera e `=VAR.S(range)` per un campione.
 
@@ -134,9 +134,9 @@ L'**analisi comparativa** ha come obiettivo il confronto di due o più gruppi pe
 
 Il **test t di Student** è utilizzato per verificare se le medie di due gruppi siano statisticamente differenti. La formula per il test t è:
 
-\[
+$$
 t = \frac{\overline{X_1} - \overline{X_2}}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
-\]
+$$
 
 In OpenOffice Calc, il test t può essere effettuato con la funzione `=TEST.T(range1, range2, 2, 3)`.
 
@@ -161,9 +161,9 @@ L'**analisi inferenziale** consente di fare delle deduzioni o delle previsioni r
 
 Un **intervallo di confidenza** offre una stima dell’intervallo in cui si troverebbe il parametro di una popolazione (ad esempio, la media), basandosi su un campione di dati. La formula per un intervallo di confidenza della media è:
 
-\[
+$$
 \mu = \overline{X} \pm z \cdot \frac{\sigma}{\sqrt{n}}
-\]
+$$
 
 In OpenOffice Calc, è possibile calcolare un intervallo di confidenza utilizzando le funzioni di **media** e **deviazione standard**, insieme al valore z per il livello di confidenza desiderato.
 
