@@ -25,29 +25,29 @@ Il progetto si inserisce in una strategia di analisi dei dati sociale ed economi
 
 - Calcolare la media della retribuzione salariale per ciascun gruppo (per genere, titolo di studio e settore). La media (o media aritmetica) di un insieme di valori si calcola come:
 
-  $$
-  \mu = \frac{1}{n} \sum_{i=1}^{n} x_i
-  $$
+
+  $$\mu = \frac{1}{n} \sum_{i=1}^{n} x_i$$
+
 
   dove $\mu$ è la media, $n$ è il numero di osservazioni e $x_i$ è ciascun valore dell'insieme. La formula per la media in Calc è:  
   `=MEDIA(intervallo di celle)`
 
 - Calcolare la deviazione standard per ciascun gruppo. La deviazione standard misura la dispersione dei dati rispetto alla media e si calcola come:
 
-  ```math
-  \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
-  ```
 
-  dove $ \sigma $ è la deviazione standard, $ n $ è il numero di osservazioni, $ x_i $ è ciascun valore dell'insieme e $ \mu $ è la media. La formula per la deviazione standard in Calc è:
+  $$\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}$$
+
+
+  dove $\sigma$ è la deviazione standard, $n$ è il numero di osservazioni, $x_i$ è ciascun valore dell'insieme e $\mu$ è la media. La formula per la deviazione standard in Calc è:
   `=DEV.ST(intervallo di celle)`
 
 - Misurare il test t per confrontare le medie tra maschi e femmine in ciascun gruppo (settore e titolo di studio). Il test t per confrontare le medie di due gruppi indipendenti si calcola come:
 
-  ```math
-  t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
-  ```
+  
+  $$t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
 
-  dove $ \bar{x}_1 $ e $ \bar{x}_2 $ indicano le medie dei due gruppi, $ s_1^2 $ e $ s_2^2 $ indicano le varianze dei due gruppi, e $ n_1 $ e $ n_2 $ indicano le dimensioni dei due campioni. La formula per il test t in Calc è:  
+
+  dove $\bar{x}_1$ e $\bar{x}_2$ indicano le medie dei due gruppi, $s_1^2$ e $s_2^2$ indicano le varianze dei due gruppi, e $n_1$ e $n_2$ indicano le dimensioni dei due campioni. La formula per il test t in Calc è:  
   `=TEST.T(intervallo uno; intervallo due; 2; 3)` (dove `2` è per il test a due code e `3` è per il test per due campioni non appaiati)
 
 #### 6. Risultati Attesi:
