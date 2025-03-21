@@ -46,6 +46,7 @@ Per ogni categoria di titolo di studio e genere, si applicheranno le seguenti fo
 - **Mediana**: Il valore centrale che separa i dati in due metà uguali.
   - Formula OpenOffice Calc: `=MEDIANA(range)`
   - Formula matematica:
+    
     $$
     \text{M} =
     \begin{cases}
@@ -53,14 +54,17 @@ Per ogni categoria di titolo di studio e genere, si applicheranno le seguenti fo
     \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} & \text{se } n \text{ è pari}
     \end{cases}
     $$
+    
   - La mediana è il valore che si trova al centro di un insieme ordinato di dati.
 
 - **Deviazione standard**: La misura della dispersione delle retribuzioni rispetto alla media.
   - Formula OpenOffice Calc: `=DEV.STANDARD(range)`
   - Formula matematica:  
+
     $$
     \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
     $$
+    
   - Dove \(x_i\) è ogni valore nel dataset, \(\mu\) è la media e \(n\) è il numero di osservazioni.
 
 ## Analisi inferenziale
@@ -69,9 +73,11 @@ Per ogni categoria di titolo di studio e genere, si applicheranno le seguenti fo
 - **Test t per campioni indipendenti**: Verifica se le medie di due gruppi (ad esempio, uomini e donne) sono significativamente diverse.
   - Formula OpenOffice Calc: `=TEST.T(range1, range2, 2, 3)`
   - Formula matematica:  
+
     $$
     t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
     $$
+    
   - Dove \(\bar{x}_1\) e \(\bar{x}_2\) sono le medie dei due gruppi, \(s_1\) e \(s_2\) sono le deviazioni standard e \(n_1\) e \(n_2\) sono le dimensioni dei gruppi.
 
 ## Visualizzazioni
