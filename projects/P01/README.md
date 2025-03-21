@@ -25,11 +25,9 @@ Il progetto si inserisce in una strategia di analisi dei dati sociale ed economi
 
 - Calcolare la media della retribuzione salariale per ciascun gruppo (per genere, titolo di studio e settore). La media (o media aritmetica) di un insieme di valori si calcola come:
 
-  ```math
-  \mu = \frac{1}{n} \sum_{i=1}^{n} x_i
-  ```
+  $$`\mu = \frac{1}{n} \sum_{i=1}^{n} x_i`$$
 
-  dove $ \mu $ è la media, $ n $ è il numero di osservazioni e $ x_i $ è ciascun valore dell'insieme. La formula per la media in Calc è:  
+  dove $`\mu`$ è la media, $ n $ è il numero di osservazioni e $ x_i $ è ciascun valore dell'insieme. La formula per la media in Calc è:  
   `=MEDIA(intervallo di celle)`
 
 - Calcolare la deviazione standard per ciascun gruppo. La deviazione standard misura la dispersione dei dati rispetto alla media e si calcola come:
