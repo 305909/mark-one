@@ -36,9 +36,11 @@ Per ogni categoria di titolo di studio e genere, si applicheranno le seguenti fo
 - **Media**: La media aritmetica delle retribuzioni per ciascun gruppo.
   - Formula OpenOffice Calc: `=MEDIA(range)`
   - Formula matematica:
+ 
     $$
     \mu = \frac{1}{n} \sum_{i=1}^{n} x_i
     $$
+    
   - Dove \(x_i\) è ogni valore nel dataset e \(n\) è il numero totale di osservazioni.
 
 - **Mediana**: Il valore centrale che separa i dati in due metà uguali.
