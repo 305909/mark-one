@@ -1,106 +1,47 @@
-# Executive Summary
+### Analisi delle Retribuzioni Lorde Orarie in Italia nel 2022
 
-L'analisi delle disparità salariali per genere e titolo di studio in Italia presenta un'opportunità per comprendere le differenze retributive e orientare politiche sociali informate. Attraverso un dataset I.Stat, questo progetto esamina e quantifica il divario salariale in base al sesso e al livello di istruzione, identificando tendenze e fornendo raccomandazioni per promuovere l'equità. L'obiettivo è mettere a disposizione delle istituzioni e degli stakeholder (pubblici, privati, sociali) strumenti concreti per interventi informati.
+#### 1. Executive Summary:
 
-# Background del progetto
+Il progetto richiede al candidato di studiare un dataset I.Stat che mostra la retribuzione lorda oraria (mediana) per le posizioni lavorative su territorio nazionale (2022), suddiviso per livello di istruzione, genere e settore (industria e servizi). Lo studio serve per misurare: “Se e quanto varia la retribuzione salariale in funzione di genere, titolo di studio e settore e, soprattutto, se il titolo di studio concorra a moderare tali differenze.”. Il candidato è chiamato a quantificare le disparità salariali tra uomini e donne, nonché l'impatto del titolo di studio su queste disparità, per ricercare la presenza di pattern discriminanti, gap retributivi tra i generi e l’eventuale effetto “livellante” del titolo di studio sul divario salariale. 
 
-Il contesto socio-economico attuale evidenzia come le disuguaglianze di genere rappresentino ancora una sfida significativa per l’Italia, soprattutto sul mercato del lavoro. Questo progetto risponde direttamente alla necessità di comprendere le dimensioni del divario salariale in relazione al livello educativo. L’analisi delle retribuzioni medie e della loro variabilità per genere e titolo di studio mette a disposizione un contributo fondamentale alla discussione politica, sociale ed economica sul tema per stakeholder chiave come policy makers, aziende, enti di formazione e organizzazioni di tutela dei diritti lavorativi.
+#### 2. Background del Progetto:
 
-# Obiettivi del progetto
+Il dataset in esame si inserisce in un contesto storico e socio-economico in cui la disparità salariale tra uomini e donne è ancora una realtà.  Nonostante le azioni degli ultimi decenni, i dati mostrano che, in media, la retribuzione salariale per le donne è ancora inferiore rispetto a quella per gli uomini. Il titolo di studio, inoltre, è noto per esercitare un impatto significativo sulle retribuzioni, ma non sempre in modo uniforme tra i diversi generi. 
 
-L'obiettivo principale è esaminare la relazione tra titolo di studio, genere e retribuzione oraria lorda in Italia per l'anno 2022.
+#### 3. Obiettivi del Progetto:
 
-- Quantificare e analizzare il divario salariale tra uomini e donne.
-- Analizzare l'influenza del titolo di studio sulla retribuzione.
-- Identificare eventuali correlazioni tra livello educativo e disparità di genere nella retribuzione.
-- Consigliare azioni concrete per politiche di riduzione del divario salariale.
+- Misurare le variazioni della retribuzione salariale tra uomini e donne in relazione al titolo di studio e al settore lavorativo.
+- Studiare l’effetto mitigante del titolo di studio sul gap retributivo.
 
-# Domande di ricerca
+Il progetto si inserisce in una strategia di analisi dei dati sociale ed economica, che cerca di stimare le disuguaglianze salariali tramite evidenze statistiche.
 
-- Qual è la differenza salariale media per genere a parità di titolo di studio?
-- Il livello educativo influisce significativamente sulla disparità salariale tra uomini e donne?
-- Esiste una correlazione diretta tra aumento del titolo di studio e riduzione delle differenze retributive per genere?
+#### 4. Domande di Ricerca:
 
-# Ipotesi
+- Variazione della retribuzione salariale: Quanto varia la retribuzione lorda oraria in funzione di genere, titolo di studio e settore? Ipotesi: Le medie retributive per le posizioni lavorative variano significativamente tra maschi e femmine, con differenze più marcate nei settori industriali.
+- Effetto del titolo di studio: Il titolo di studio modera il divario retributivo tra i generi? Ipotesi: A parità di settore, un livello di istruzione elevato — quale una laurea o un titolo post-laurea — concorre a moderare il divario salariale.
+- Interazioni tra le variabili: Sussistono interazioni rilevanti tra il settore, il genere e il titolo di studio nel processo di determinazione della retribuzione? Ipotesi: Le variabili interagiscono in modo complesso, con il settore che amplifica o attenua le disparità legate al genere e al titolo di studio.
 
-- Un titolo di studio superiore riduce il divario salariale di genere.
-- La variabilità salariale è maggiore nei gruppi con titoli di studio inferiori.
+#### 5. Metodologia:
 
-# Metodologia
+- Calcolare la media della retribuzione salariale per ciascun gruppo (per genere, titolo di studio e settore). La formula per la media in Calc è:  
+  `=MEDIA(intervallo di celle)`
+- Calcolare la deviazione standard per ciascun gruppo:  
+  `=DEV.ST(intervallo di celle)`
+- Misurare il test t per confrontare le medie tra maschi e femmine in ciascun gruppo (settore e titolo di studio). La formula in Calc per il test t è:  
+  `=TEST.T(intervallo uno; intervallo due; 2; 3)` (dove `2` è per il test a due code e `3` è per il test per due campioni non appaiati)
 
-Tramite **OpenOffice Calc**:
+#### 6. Risultati Attesi:
 
-## Analisi descrittiva
-Per ogni categoria di titolo di studio e genere, si applicheranno le seguenti formule per calcolare le misure di tendenza centrale e dispersione:
+- La variazione della retribuzione salariale in relazione al genere, al titolo di studio e al settore.
+- Le correlazioni significative tra il titolo di studio e la riduzione delle disparità salariali.
+- Le differenze salariali nei diversi settori e l’influenza del genere su di queste.
 
-- **Media**: La media aritmetica delle retribuzioni per ciascun gruppo.
-  - Formula OpenOffice Calc: `=MEDIA(range)`
-  - Formula matematica:
- 
-    
-    $$
-    \mu = \frac{1}{n} \sum_{i=1}^{n} x_i
-    $$
+### Guida al Progetto:
 
-
-  - Dove $x_i$ è ogni valore nel dataset e $n$ è il numero totale di osservazioni.
-
-- **Mediana**: Il valore centrale che separa i dati in due metà uguali.
-  - Formula OpenOffice Calc: `=MEDIANA(range)`
-  - Formula matematica:
-
-    $$
-    \text{M} =
-    \begin{cases}
-    x_{\left(\frac{n+1}{2}\right)} & \text{se } n \text{ è dispari} \\
-    \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} & \text{se } n \text{ è pari}
-    \end{cases}
-    $$
-    
-    
-  - La mediana è il valore che si trova al centro di un insieme ordinato di dati.
-
-- **Deviazione standard**: La misura della dispersione delle retribuzioni rispetto alla media.
-  - Formula OpenOffice Calc: `=DEV.STANDARD(range)`
-  - Formula matematica:
-
-    $$
-    \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
-    $$
-
-    
-  - Dove $x_i$ è ogni valore nel dataset, $\mu$ è la media e $n$ è il numero di osservazioni.
-
-## Analisi inferenziale
-- **Test statistici**: Per verificare la significatività delle differenze salariali tra generi e livelli di istruzione, si applicheranno test come il test t per campioni indipendenti.
-
-- **Test t per campioni indipendenti**: Verifica se le medie di due gruppi (ad esempio, uomini e donne) sono significativamente diverse.
-  - Formula OpenOffice Calc: `=TEST.T(range1, range2, 2, 3)`
-  - Formula matematica:
-
-    $$
-    t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
-    $$
-
-    
-  - Dove $\bar{x}_1$ e $\bar{x}_2$ sono le medie dei due gruppi, $s_1$ e $s_2$ sono le deviazioni standard e $n_1$ e $n_2$ sono le dimensioni dei gruppi.
-
-## Visualizzazioni
-
-- **Grafici a barre e boxplot**: Utilizzati per confrontare i salari medi e la distribuzione delle retribuzioni tra i gruppi (sesso, titolo di studio).
-- **Grafici scatter**: Per visualizzare la correlazione tra livello educativo e retribuzione, nonché le differenze tra uomini e donne.
-
-# Risultati attesi
-
-L'analisi cerca di rivelare:
-- Comprensione delle dinamiche salariali e della presenza o assenza di equità salariale tra uomini e donne.
-- Evidenze quantitative sul divario retributivo medio e sulla sua variabilità.
-- Conferma o rifiuto delle ipotesi riguardanti il ruolo dell'istruzione sul divario di genere.
-- Indicazioni informate per politiche pubbliche mirate al raggiungimento della parità salariale.
-
-# Conclusioni
-
-Attraverso i risultati attesi si cerca di formulare raccomandazioni concrete come:
-- Incentivare politiche di educazione/formazione volte a ridurre disparità retributive.
-- Proporre interventi legislativi o aziendali per garantire trasparenza retributiva.
-- Suggerire strategie per la valorizzazione professionale delle donne nel mercato del lavoro.
+1. **Preparazione dei dati**: Importa il dataset in OpenOffice Calc e verifica la qualità dei dati.
+2. **Analisi Descrittiva**: Calcola le medie e le deviazioni standard per le retribuzioni salariali in funzione di genere, titolo di studio e settore.
+3. **Visualizzazione dei dati**: Crea grafici a barre per confrontare le retribuzioni medie tra i gruppi.
+4. **Test delle ipotesi**: Misura il test t per confrontare le retribuzioni salariali tra maschi e femmine in ciascun gruppo.
+5. **Correlazione**: Misura la correlazione tra titolo di studio e retribuzione con il grafico a dispersione.
+6. **Interpreta i risultati**: Serviti dei grafici e i risultati statistici per rispondere alle domande di ricerca.
+7. **Redazione del report finale**: Scrivi un report per presentare le operazioni, i risultati e le conclusioni del progetto.
